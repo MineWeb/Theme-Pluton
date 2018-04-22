@@ -1,0 +1,38 @@
+{
+    "name": "Pluton",
+    "slug": "Pluton",
+    "author": "Tronai",
+    "version": "4.2.0",
+    "apiID": 74,
+    "configurations": {
+        "color": "#933d40",
+        "scolor": "#ff5858",
+        "footer-text": "Le Lorem Ipsum est  dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les ann\u00e9es 1500. <br> <br> Quand un peintre anonyme assembla ensemble des morceaux de texte pour r\u00e9aliser un livre .",
+        "slider": "true",
+        "menu_logo": "https:\/\/hyparia.fr\/img\/logo.png",
+        "slider_logo": "https:\/\/forum.epicube.fr\/proxy.php?image=http%3A%2F%2Fvoidlauncherforums.voidswrath.com%2Fstyles%2FXenCrea.com%2FScroll%2Fxenforo%2Flogo.og.png&hash=51328476fd04a012b5fc5688169f35a2",
+        "ip": "play.tronai.fr",
+        "home_accueil": "UNE R\u00c9DUCTION DE 50% EST DISPONIBLE SUR LA BOUTIQUE",
+        "home_accueil_text": "ALLER SUR LA BOUTIQUE ",
+        "home_accueil_lien": "Empty",
+        "compteur": "true",
+        "mois": "July",
+        "day": "2",
+        "years": "2018",
+        "hour": "15:00:00",
+        "top": "true",
+        "menu": "Menu 1",
+        "logo": false
+    },
+    "supported": {
+        "eywek.shop.1": ">=0.4.0",
+        "eywek.support.2": ">=0.2.0",
+        "eywek.vote.3": ">=0.7.0",
+        "eywek.factionranking.4": "= 0.2.1",
+        "tronai.cps.98": ">=1.2.0",
+        "EmpireDev.Wiki.114": ">=1.0.0",
+        "Vavaballz.myFaq.5": ">=1.1.1",
+        "EmpireDev.ListMembers.24": ">=1.2.8"
+    },
+    "slider": true
+}

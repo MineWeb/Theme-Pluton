@@ -1,0 +1,451 @@
+/**
+* Théme MineWeb Pluton par Tronai
+* Ce CSS ne peut étre utiliser seulement si le théme a été acheté sur le market de MineWeb.org
+*/
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+html{height: 100%; width: 100%; margin: 0; }
+li{list-style-type: none;}
+body{margin: 0; padding: 0;height: 100%; background-color:#25262e; font-family: 'Montserrat';}
+
+/**
+* Classe Prédéfinie
+*/
+a:hover{text-decoration: none; color:grey;}
+.white{color:white;}
+.black{color:black;}
+.hwhite:hover{color:white;}
+.hblack:hover{color:black;}
+.hcolor{transition-duration: 0.3s;}
+/**
+ Responsive
+ */
+@media screen and (min-width: 200px) and (max-width: 640px){.home-information, .respc, .top{display: none;}}
+.bd-r-10{
+  margin-right: 10px;
+}
+
+/**
+* Menu Top
+*/
+
+.top{
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #2d2e33;
+  color:white;
+  margin: 0;
+}
+
+.top p{
+  margin-left:10%;
+}
+
+.top p span{
+  float: right;
+  margin-right: 12%;
+}
+
+/* MENU */
+
+.navbar{
+  background-color: #25262e;
+  border:0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin:0;
+}
+
+.navbar-main{
+  background-color: #25262e;
+  margin: 0;
+}
+
+.navbar-title{
+  margin-top: -20px;
+}
+
+.nav span{
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bold;
+  transition: ease;
+  transition-duration: 0.3s;
+}
+
+#menu-dropdown{
+  background-color: #25262e;
+}
+
+.dropdown-menu{
+  background-color: #25262e;
+  border-radius: 0px;
+  color:white;
+  font-family: 'Russo One', sans-serif;
+}
+
+#navbar-dropdown-item{
+  color:white;
+}
+
+#navbar-dropdown-item:hover{
+  background-color: #25262e;
+}
+
+.navbar-title img{
+  width:100%;
+}
+/**
+* Accueil
+*/
+
+.news-bdr{
+  margin-top: -40%;
+}
+
+.home-carousel-image{
+  filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        -moz-filter: brightness(50%);
+        -o-filter: brightness(50%);
+        -ms-filter: brightness(50%);
+}
+
+.home-carousel-bvn-color{
+  color:#ff5858;
+}
+
+.home-carousel-logo{
+  width: 300px;
+}
+
+
+.home-information{
+  background-color: #454a4f;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color:white;
+}
+
+.home-information-span{
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.home-information-button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+
+/**
+* Boutique
+*/
+.shop-item-text{
+  margin-top:0px;
+}
+.shop-item-text h3{
+  background-color: #262626;
+  text-align: center;
+  color:white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin:0;
+    display: none;
+}
+.shop-item-text h3 a{
+  color:white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin:0;
+}
+
+.shop-item-text-btn{
+  margin:0px;
+}
+
+.shop-item-text-price{
+  background-color: #933d40;
+  color:white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin:0px;
+  font-size: 20px;
+}
+
+/**
+* Vote
+*/
+
+#vote-well{color:white; background-color: #262626;}
+.vote-active{background: #933d40;color:white;}
+
+/**
+* Page
+*/
+
+.page{
+    margin-top: 100px;
+    margin-bottom: 15.7%;
+}
+
+.page-h2{
+  text-align: center;
+  font-size: 550%;
+  font-family: 'MankSans', sans-serif;
+}
+
+.page-h3{
+  text-align: center;
+  color:white;
+  font-family: 'MankSans', sans-serif;
+}
+
+/**
+* Footer
+*/
+
+footer{
+  background-color: #313131;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color:black;
+  font-weight: 600;
+  transition-delay: 0.3s;
+}
+
+.have-border{
+  border-right: grey solid 2px;
+}
+
+.footer-resaux{
+  padding: 3px;
+}
+
+/**
+* Bootstrap
+*/
+
+.btn {border: 0px;border-radius: 5px;color:white;transition-duration: 0.3;}
+.btn-danger{background-color:#ff5757;}
+.btn-danger:hover{background-color:#ff5047;}
+
+.alert{border-radius: 0px; color:white;}
+.alert-danger{background: rgba(231, 76, 60,1.0); border-color:rgba(231, 76, 60,1.0);}
+.alert-success{background: rgba(39, 174, 96,1.0); border-color:rgba(39, 174, 96,1.0);}
+.alert-warning{background: rgba(243, 156, 18,1.0); border-color:rgba(243, 156, 18,1.0);}
+.alert-info{background: rgba(52, 152, 219,1.0); border-color:rgba(52, 152, 219,1.0);}
+
+.panel, .panel-heading, .panel-body{
+  border-radius: 0px;
+  border-bottom:0px;
+}
+
+.panel-title{
+  color:white;
+}
+
+
+.panel{
+  background-color: #2d2e33;
+  color:white;
+  border:0px;
+}
+
+.panel a {
+  transition-duration: 0.3s;
+}
+.panel a:hover{
+  color:black;
+}
+.panel-title, #panel-head{
+  background: #25262e;
+ font-size: 20px;
+ padding:5px;
+ border:0px;
+ margin:0px;
+ font-family: 'MankSans', sans-serif;
+}
+
+.panel-heading{
+   background-color:#262626;
+}
+
+/**--------------------------------
+*----------------MODAL----------
+---------------------------------*/
+
+ .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+}
+.modal-close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.modal-close:hover {
+    background: #00d9ff;
+}
+
+.dropdown a:focus, .dropdown a:hover {
+  background: red;
+}
+
+
+.thumbnail, .well, .setup-content, .modal-content{
+  background: #262626;
+  border:0;
+}
+
+.modal-header, .modal-footer{
+  color:white;
+  border:0px;
+}
+ .modal-content{
+   border:0px;
+   color:white;
+ }
+
+ /* SOCIAL */
+
+ .fb {
+ 	width:100%;
+ 	height:50px;
+ 	line-height:10px;
+ 	background-color:#3a5795;
+ 	border-bottom:4px solid #293e6a;
+ 	margin-bottom:5px;
+ }
+
+
+ .skype {
+ 	width:100%;
+ 	height:50px;
+ 	line-height:10px;
+ 	background-color:#00aff0;
+ 	border-bottom:4px solid #2b5464;
+ 	margin-bottom:5px;
+ }
+
+ .twitter {
+ 	width:100%;
+ 	height:50px;
+ 	line-height:10px;
+ 	background-color:#55acee;
+ 	border-bottom:4px solid #3e7dad;
+ 	margin-bottom:5px;
+ }
+ .youtube {
+ 	width:100%;
+ 	height:50px;
+ 	line-height:10px;
+ 	background-color:#e74c3c;
+ 	border-bottom:4px solid #c94335;
+ 	margin-bottom:5px;
+ }
+ #logo__social {
+ 	color:#fff;
+ 	font-size:29px;
+ }
+
+ .social__skype {
+ 	padding:10px 10px 0 12px;
+ 	background-color:#16789c;
+ 	float:left;
+ 	height:50px;width:50px;
+ 	border-bottom:4px solid #105971;
+ 	margin:0 10px 0 0;
+ }
+
+ .social__fb {
+ 	padding:12px 15px 0 15px;
+ 	background-color:#293d69;
+ 	float:left;
+ 	height:50px;width:50px;
+ 	border-bottom:4px solid #213154;
+ 	margin:0 10px 0 0;
+ }
+
+ .social__twt {
+ 	padding:10px 10px 0 12px;
+ 	background-color:#3c79a7;
+ 	float:left;
+ 	height:50px;width:50px;
+ 	border-bottom:4px solid #2c5879;
+ 	margin:0 10px 0 0;
+ }
+ .social__yt {
+ 	padding:10px 10px 0 12px;
+ 	background-color:#c0392b;
+ 	float:left;
+ 	height:50px;width:50px;
+ 	border-bottom:4px solid #a02f24;
+ 	margin:0 10px 0 0;
+ }
+
+ .title__social {
+ 	padding:13px 0 0 0;
+ 	color:#fff;
+ 	font-size:25px;
+ 	text-transform:uppercase;
+ 	font-weight:bold;
+ 	text-align:left;
+ }
+
+ .desc__social {
+ 	padding:5px 0 0 0;
+ 	color:#fff;
+ 	text-align:left;
+ 	font-size:12px;
+ }
+
+ .none {
+ 	text-decoration:none;
+ 	color:#fff;
+ }
+
+ .none:hover {
+ 	text-decoration:none;
+ 	color:#fff;
+ }
