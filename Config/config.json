@@ -3,7 +3,6 @@
     "slug": "Pluton",
     "author": "Tronai",
     "version": "4.2.0",
-    "apiID": 74,
     "configurations": {
         "color": "#933d40",
         "scolor": "#ff5858",
