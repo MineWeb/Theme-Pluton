@@ -6,20 +6,10 @@ if(isset($config['logo']) && $config['logo']) {
   $form_input['filename'] = 'theme_logo.png';
 }
 
-$json = file_get_contents('https://tronai.fr/theme/pluton.json');
-$inf = json_decode($json, true);
+
 ?>
 <section class="content">
-  <?php if($inf != ""){ ?>
-  <div class="box box-warning">
-    <div class="box-header with-border">
-      <h3 class="box-title"><?= $inf['title'] ?></h3>
-    </div>
-    <div class="box-body">
-      <?= $inf['contenue'] ?>
-    </div>
-  </div>
-  <?php } ?>
+
   <div class="row">
     <div class="col-md-12">
       <div class="box">
