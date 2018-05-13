@@ -198,7 +198,10 @@ if(isset($config['logo']) && $config['logo']) {
 
 
 
-            <input name="data[_Token][key]" value="<?= $csrfToken ?>" type="hidden"> <button class="btn btn-primary" type="submit"><?= $Lang->get('GLOBAL__SUBMIT') ?></button> <a href="<?= $this->Html->url(array('controller' => 'theme', 'action' => 'index', 'admin' => true)) ?>" type="button" class="btn btn-default"><?= $Lang->get('GLOBAL__CANCEL') ?></a>
+                            <input name="data[_Token][key]" value="<?= $csrfToken ?>" type="hidden">
+                <button class="btn btn-primary" type="submit"><?= $Lang->get('GLOBAL__SUBMIT') ?></button>
+                <a href="<?= $this->Html->url(array('controller' => 'theme', 'action' => 'index', 'admin' => true)) ?>" type="button" class="btn btn-default"><?= $Lang->get('GLOBAL__CANCEL') ?></a>
+
             </form>
           </div>
           </div>
