@@ -34,8 +34,10 @@
   <body>
       <?= $this->element('css'); ?>
       <?php
-        $json = file_get_contents('http://api.mineweb.org/api/v2/theme/all');
-        $mw = json_decode($json, true);
+        #Suppression de l'api mineweb car elle a été supprimé..
+        #Ancien code avec l'api mineweb :
+        #$json = file_get_contents('http://api.mineweb.org/api/v2/theme/all');
+        #$mw = json_decode($json, true);
         ?>
         <div id="loader"></div>
       <?= $this->element('top'); ?>
