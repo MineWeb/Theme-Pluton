@@ -20,7 +20,6 @@
     <!-- Bootstrap & FA -->
     <?= $this->Html->css('bootstrap.min.css'); ?>
     <?= $this->Html->css('font-awesome.min.css'); ?>
-    <?= $this->Html->css('../font-awesome-4.1.0/css/font-awesome.min.css'); ?>
 
     <!-- Autre -->
     <?= $this->Html->css('modern-businesss.css') ?>
@@ -33,13 +32,7 @@
   </head>
   <body>
       <?= $this->element('css'); ?>
-      <?php
-        #Suppression de l'api mineweb car elle a été supprimé..
-        #Ancien code avec l'api mineweb :
-        #$json = file_get_contents('http://api.mineweb.org/api/v2/theme/all');
-        #$mw = json_decode($json, true);
-        ?>
-        <div id="loader"></div>
+      <div id="loader"></div>
       <?= $this->element('top'); ?>
       <?= $this->element('header'); ?>
 
@@ -58,7 +51,6 @@
     <?= $this->Html->script('form.js') ?>
     <?= $this->Html->script('notification.js') ?>
     <?= $this->Html->script('easy_paginate.js'); ?>
-    <?= $this->Html->script('bootstrap-carousel.js'); ?>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js"></script>
