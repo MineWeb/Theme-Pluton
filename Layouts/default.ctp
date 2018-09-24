@@ -15,7 +15,7 @@
     <meta property="og:title" content="<?= $website_name ?>" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="<?= $this->Html->url('/') ?>" />
-    <meta property="og:image" content="<?= $theme_config['favicon_url'] ?>" />
+    <meta property="og:image" content="<?= (isset($theme_config) && isset($theme_config['favicon_url'])) ? $theme_config['favicon_url'] : '' ?>" />
 
     <!-- Bootstrap & FA -->
     <?= $this->Html->css('bootstrap.min.css'); ?>
@@ -28,7 +28,7 @@
     <?= $this->Html->css('custom.css'); ?>
 
 
-    <link rel="icon" type="image/png" href="<?= $theme_config['favicon_url'] ?>" />
+    <link rel="icon" type="image/png" href="<?= (isset($theme_config) && isset($theme_config['favicon_url'])) ? $theme_config['favicon_url'] : '' ?>" />
   </head>
   <body>
       <?= $this->element('css'); ?>
