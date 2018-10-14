@@ -63,7 +63,7 @@
               <h4><span class="scolor">MEILLEURS</span> VOTEURS</h4><br>
 
 
-              <?php if($EyPlugin->isInstalled('eywek.vote.3')) {
+              <?php if($EyPlugin->isInstalled('eywek.vote')) {
                   $users_vote = ClassRegistry::init('Vote.Vote')->find('all', [
                       'fields' => ['username', 'COUNT(id) AS count'],
                       'conditions' => ['created LIKE' => date('Y') . '-' . date('m') . '-%'],
