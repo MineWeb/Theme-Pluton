@@ -2,7 +2,7 @@
     "name": "Pluton",
     "slug": "Pluton",
     "author": "Tronai",
-    "version": "4.5.0",
+    "version": "4.5.1",
     "configurations": {
         "color": "#933d40",
         "scolor": "#ff5858",
@@ -23,15 +23,6 @@
         "menu": "Menu 1",
         "logo": false
     },
-    "supported": {
-        "eywek.shop.1": ">=0.4.0",
-        "eywek.support.2": ">=0.2.0",
-        "eywek.vote.3": ">=0.7.0",
-        "eywek.factionranking.4": "= 0.2.1",
-        "tronai.cps.98": ">=1.2.0",
-        "EmpireDev.Wiki.114": ">=1.0.0",
-        "Vavaballz.myFaq.5": ">=1.1.1",
-        "EmpireDev.ListMembers.24": ">=1.2.8"
-    },
+    "supported": {},
     "slider": true
 }
