@@ -129,7 +129,6 @@
     </div>
     <?php } ?>
 
-    <?php if($EyPlugin->isInstalled('eywek.shop.1')) { ?>
 
       <div class="panel panel-default">
             <h3 class="panel-title" id="panel-head"><?= $Lang->get('SHOP__USER_POINTS_TRANSFER') ?></h3>
@@ -158,7 +157,7 @@
     </form>
           </div>
         </div>
-    <?php } ?>
+
 
 
 
