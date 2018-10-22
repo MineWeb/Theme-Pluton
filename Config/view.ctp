@@ -97,6 +97,13 @@ if(isset($config['logo']) && $config['logo']) {
                        <input type="text" class="form-control" name="home_accueil_lien" value="<?= $theme_config['home_accueil_lien'] ?>"></td>
                      </td>
                    </tr>
+                  <tr>
+                     <td><?= $Lang->get('THEME__FAVICON_URL') ?></td>
+					           <td><i></i></td>
+                     <td>
+                       <input type="text" class="form-control" name="favicon_url" value="<?= $config['favicon_url'] ?>">
+                     </td>
+                   </tr>
                  </table>
                </div>
             </div>
