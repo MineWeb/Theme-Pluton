@@ -2,10 +2,11 @@
     "name": "Pluton",
     "slug": "Pluton",
     "author": "Tronai",
-    "version": "4.5.1",
+    "version": "4.5.2",
     "configurations": {
         "color": "#933d40",
         "scolor": "#ff5858",
+        "favicon_url": "",
         "footer-text": "Le Lorem Ipsum est  dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les ann\u00e9es 1500. <br> <br> Quand un peintre anonyme assembla ensemble des morceaux de texte pour r\u00e9aliser un livre .",
         "slider": "true",
         "menu_logo": "https:\/\/hyparia.fr\/img\/logo.png",

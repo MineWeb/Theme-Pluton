@@ -10,7 +10,9 @@
 html{height: 100%; width: 100%; margin: 0; }
 li{list-style-type: none;}
 body{margin: 0; padding: 0;height: 100%; background-color:#25262e; font-family: 'Montserrat';}
-
+.checkbox {
+    color:white;
+}
 /**
 * Classe Prédéfinie
 */
