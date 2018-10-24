@@ -34,7 +34,7 @@
       <?= $this->element('css'); ?>
       <div id="loader"></div>
       <?= $this->element('top'); ?>
-      <?= $this->element('header'); ?>
+      <?= $this->element('navbar'); ?>
 
         <?= $this->fetch('content'); ?>
 
@@ -44,7 +44,7 @@
 
     <!-- Modal -->
 
-    <?= $this->element('modal'); ?>
+    <?= $this->element('modals'); ?>
     <!-- JS -->
 
     <?= $this->Html->script('app.js') ?>

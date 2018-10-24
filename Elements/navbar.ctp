@@ -23,13 +23,21 @@
                           <li class="li-nav">
                               <a href="<?= $value['Navbar']['url'] ?>">
                                 <span class="white hscolor">
+                                    <?php if(!empty($value['Navbar']['icon'])): ?>
+                                        <i class="fa fa-<?= $value['Navbar']['icon'] ?>"></i>
+                                    <?php endif; ?>
                                   <?= $value['Navbar']['name'] ?>
                                 </span>
                               </a>
                           </li>
                         <?php } else { ?>
                           <li class="dropdown">
-                            <a href="#" id="menu-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="white hcolor"><?= $value['Navbar']['name'] ?> <span class="caret"></span></span></a>
+                            <a href="#" id="menu-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="white hcolor">
+                            <?php if(!empty($value['Navbar']['icon'])): ?>
+                                <i class="fa fa-<?= $value['Navbar']['icon'] ?>"></i>
+                            <?php endif; ?>
+                            <?= $value['Navbar']['name'] ?> 
+                            <span class="caret"></span></span></a>
                             <ul class="dropdown-menu" role="menu">
                             <?php
                             $submenu = json_decode($value['Navbar']['submenu']);
@@ -49,8 +57,13 @@
                         <a href="#" id="menu-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="white hcolor">Membre <span class="caret"></span></span></a>
                         <ul class="dropdown-menu" role="menu">
                           <?php if(!$isConnected){ ?>
-                              <li><a href="#login" id="navbar-dropdown-item">Connexion</a></li>
-                              <li><a href="#register" id="navbar-dropdown-item">Inscription</a></li>
+                                <?php if($EyPlugin->isInstalled('phpierre.signinup')) { ?>
+                                    <li><a href="/login" id="navbar-dropdown-item">Connexion</a></li>
+                                    <li><a href="/register" id="navbar-dropdown-item">Inscription</a></li>
+                                <?php } else { ?>
+                                    <li><a href="#login" id="navbar-dropdown-item">Connexion</a></li>
+                                    <li><a href="#register" id="navbar-dropdown-item">Inscription</a></li>
+                                <?php } ?>
                           <?php }else{ ?>
                             <li><a href="<?= $this->Html->url(array('controller' => 'profile', 'action' => 'index', 'plugin' => false)); ?>" id="navbar-dropdown-item"><?= $Lang->get('USER__PROFILE'); ?></a></li>
                             <li><a href="#notifications_modal" onclick="notification.markAllAsSeen(2)" id="navbar-dropdown-item"><span class="notification-indicator"></span>Notification</a></li>
