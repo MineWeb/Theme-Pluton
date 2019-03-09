@@ -1,3 +1,2 @@
 Développé par Tronai
-
-Pour tout bugs: https://twitter.com/Tronaidev
+Disponible sur le twitter: https://twitter.com/Tronaidev
