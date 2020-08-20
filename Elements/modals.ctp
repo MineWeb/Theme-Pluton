@@ -1,3 +1,28 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.show-password').click(function() {
+      if($(this).prev('input').prop('type') == 'password') { //Si c'est un input type password
+        $(this).prev('input').prop('type','text');
+        $(this).html('<i class="far fa-eye-slash fa-2x"></i>');
+      } else { //Sinon
+        $(this).prev('input').prop('type','password');
+        $(this).html('<i class="far fa-eye fa-2x"></i>');
+      }
+    });
+  });
+</script>
+<style type="text/css">
+.show-password {
+    font-size: 9px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 80%;
+    margin-top: -25px;
+    color: black;
+  }
+</style>
+
 <div id="login" class="modalDialog">
     <div>
 
@@ -21,6 +46,7 @@
                 <label class="col-sm-2 control-label"><?= $Lang->get('USER__PASSWORD') ?></label>
                 <div class="col-sm-10">
                   <input type="password" class="form-control" name="password" placeholder="<?= $Lang->get('USER__PASSWORD_LABEL') ?>">
+		  <span class="show-password"><i class="far fa-eye fa-2x"></i></span>
                 </div>
               </div>
 
@@ -68,12 +94,14 @@
             <label  class="col-sm-2 control-label"><?= $Lang->get('USER__PASSWORD') ?></label>
             <div class="col-sm-10">
               <input type="password" class="form-control" name="password" placeholder="<?= $Lang->get('USER__PASSWORD_LABEL') ?>">
+	      <span class="show-password"><i class="far fa-eye fa-2x"></i></span>
             </div>
           </div>
           <div class="form-group">
             <label  class="col-sm-2 control-label"><?= $Lang->get('USER__PASSWORD_CONFIRM') ?></label>
             <div class="col-sm-10">
               <input type="password" class="form-control" name="password_confirmation" placeholder="<?= $Lang->get('USER__PASSWORD_CONFIRM_LABEL') ?>">
+	      <span class="show-password"><i class="far fa-eye fa-2x"></i></span>
             </div>
           </div>
           <div class="form-group">
