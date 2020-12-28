@@ -45,11 +45,6 @@ if(isset($config['logo']) && $config['logo']) {
                      <td><input type="text" class="form-control" name="scolor" value="<?= $theme_config['scolor'] ?>"></td>
                    </tr>
                    <tr>
-                     <td><?= $Lang->get('THEME__FAVICON_URL') ?></td>
-                     <td><i>Par default : #</i></td>
-                     <td><input type="text" class="form-control" name="favicon_url" value="<?= $theme_config['favicon_url'] ?>"></td>
-                   </tr>
-                   <tr>
                      <td>Text sur le footer</td>
                      <td><i>Par default : #</i></td>
                      <td><input type="text" class="form-control" name="footer-text" value="<?= $theme_config['footer-text'] ?>"></td>
