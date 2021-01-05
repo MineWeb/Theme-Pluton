@@ -52,7 +52,7 @@
           <h3 class="panel-title">Mes crédits</h3>
         </div>
         <div class="panel-body">
-          <?= $money.' '.$Configuration->getMoneyName(); ?><br>
+          <?= $money; ?><br>
             <?php if($Permissions->can('CREDIT_ACCOUNT')) { ?>
                   <a href="#" data-toggle="modal" data-target="#addmoney" class="theme-color-btn block color" style="margin-top:20px;"><?= $Lang->get('SHOP__ADD_MONEY') ?></a>
           <?php } ?>
