@@ -12,19 +12,19 @@ if(isset($config['logo']) && $config['logo']) {
 
   <div class="row">
     <div class="col-md-12">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3><span class="pull-right">Tronai</span>
+      <div class="card">
+        <div class="card-header with-border">
+          <h3 class="card-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3><span class="pull-right">Tronai</span>
         </div>
-        <div class="box-body">
+        <div class="card-body">
 
 
 
           <div class="tabbable">
             <ul class="nav nav-tabs">
-             <li class="active"><a href="#tab1" data-toggle="tab">Option General</a></li>
-             <li><a href="#tab2" data-toggle="tab">Maintenance</a></li>
-             <li><a href="#tab3" data-toggle="tab">Menu</a></li>
+             <li class="active"><a class="nav-link text-dark" href="#tab1" data-toggle="tab">Option General</a></li>
+             <li><a href="#tab2" class="nav-link text-dark" data-toggle="tab">Maintenance</a></li>
+             <li><a href="#tab3" class="nav-link text-dark" data-toggle="tab">Menu</a></li>
              </ul>
              <form method="post" enctype="multipart/form-data" data-ajax="false">
           <div class="tab-content">
